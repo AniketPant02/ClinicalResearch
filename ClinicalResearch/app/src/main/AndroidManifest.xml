@@ -16,6 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".screen_projectlanding" />
+        <activity android:name=".screen_tasks" />
+        <activity android:name=".screen_projectlisting1" />
+        <activity android:name=".screen_setting" />
+        <activity android:name=".splash_profile" />
+        <activity android:name=".screen_create"></activity>
     </application>
 
 </manifest>

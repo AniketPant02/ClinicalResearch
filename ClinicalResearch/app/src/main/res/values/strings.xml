@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ClinicalResearch</string>
+    <string name="text_splash_logo">CSearch</string>
+    <string name="title_activity_screen_settinga">screen_settinga</string>
 </resources>
