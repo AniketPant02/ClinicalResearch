@@ -8,8 +8,8 @@
 
 <div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
   <button class="w3-bar-item w3-button w3-large"
-  onclick="w3_close()">Close &times;</button>
-  <a href="index.html" class="w3-bar-item w3-button">Projects</a>
+  onclick="w3_close()">CSearch &times;</button>
+  <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
   <a href="polls.html" class="w3-bar-item w3-button">Polls</a>
   <a href="#" class="w3-bar-item w3-button">About</a>
 </div>
@@ -19,7 +19,7 @@
 <div class="w3-teal">
   <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
   <div class="w3-container">
-    <h1>CSearch</h1>
+    <img src="/img/logo.png">
   </div>
 </div>
 <div class="jumbotron">
@@ -63,20 +63,15 @@
 </div>
 
 </div>
-
 <script>
 function w3_open() {
-  document.getElementById("main").style.marginLeft = "25%";
-  document.getElementById("mySidebar").style.width = "25%";
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("openNav").style.display = 'none';
+    document.getElementById("mySidebar").style.display = "block";
 }
 function w3_close() {
-  document.getElementById("main").style.marginLeft = "0%";
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("openNav").style.display = "inline-block";
+    document.getElementById("mySidebar").style.display = "none";
 }
 </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 </body>
