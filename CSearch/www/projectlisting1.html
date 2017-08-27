@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Project 1</title>
-    <link rel="stylesheet" href="sidebar.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
-      <button class="w3-bar-item w3-button w3-large"
-      onclick="w3_close()">CSearch &times;</button>
-      <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
-      <a href="polls.html" class="w3-bar-item w3-button">Polls</a>
-      <a href="#" class="w3-bar-item w3-button">About</a>
-    </div>
+<title>CSearch</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="sidebar.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" href="heading.css">
+<body>
 
-    <div zclass="w3-main" id="main">
+<div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="index.html" class="w3-bar-item w3-button">Projects</a>
+  <a href="polls.html" class="w3-bar-item w3-button">Polls</a>
+  <a href="#" class="w3-bar-item w3-button">About</a>
+</div>
 
-    <div class="w3-teal">
-      <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
-      <div class="w3-container">
-        <h1>CSearch</h1>
-      </div>
-    </div>
-    <script>
-    function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-    }
-    function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-    }
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<div zclass="w3-main" id="main">
 
-  </body>
+<div class="w3-teal">
+  <button id="button_open" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <h1 id="CSearch_text" align="center">CSearch</h1>
+</div>
+
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+</body>
 </html>

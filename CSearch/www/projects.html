@@ -4,12 +4,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="sidebar.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" href="heading.css">
 <body>
 
 <div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
   <button class="w3-bar-item w3-button w3-large"
-  onclick="w3_close()">CSearch &times;</button>
-  <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
+  onclick="w3_close()">Close &times;</button>
+  <a href="index.html" class="w3-bar-item w3-button">Projects</a>
   <a href="polls.html" class="w3-bar-item w3-button">Polls</a>
   <a href="#" class="w3-bar-item w3-button">About</a>
 </div>
@@ -17,61 +18,60 @@
 <div zclass="w3-main" id="main">
 
 <div class="w3-teal">
-  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
-  <div class="w3-container">
-    <img src="/img/logo.png">
-  </div>
-</div>
-<div class="jumbotron">
-  <h1>Project 1</h1>
-  <h4>Project hosted at Kaul Genetics Building. Requires a Urine test.</h4>
-  <ul>
-    <p>Requirements include:</p>
-    <li>Height: 6' 1"</li>
-    <li>Weight: 150lbs</li>
-    <li>Age: 18-55</li>
-  </ul>
-  <p><a class="btn btn-primary btn-lg" href="projectlisting1.html" role="button">Project Information</a></p>
-</div>
-<div class="w3-container">
-</div>
-<div class="jumbotron">
-  <h1>Project 1</h1>
-  <h4>Project hosted at Kaul Genetics Building. Requires a Urine test.</h4>
-  <ul>
-    <p>Requirements include:</p>
-    <li>Height: 6' 1"</li>
-    <li>Weight: 150lbs</li>
-    <li>Age: 18-55</li>
-  </ul>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Project Information</a></p>
-</div>
-<div class="w3-container">
-</div>
-<div class="jumbotron">
-  <h1>Project 1</h1>
-  <h4>Project hosted at Kaul Genetics Building. Requires a Urine test.</h4>
-  <ul>
-    <p>Requirements include:</p>
-    <li>Height: 6' 1"</li>
-    <li>Weight: 150lbs</li>
-    <li>Age: 18-55</li>
-  </ul>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Project Information</a></p>
-</div>
-<div class="w3-container">
+  <button id="button_open" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <h1 id="CSearch_text" align="center">CSearch</h1>
 </div>
 
+<div class="w3-panel w3-card" id="project_card_1">
+  <h1>Project 1: Studying genetic disorders, and altering genes.</h1>
+  <h4>Project hosted at Clark's Genetics lab.</h4>
+  <ul>
+    <p>Requirements include:</p>
+    <li>Height: Any</li>
+    <li><B>Chromosocks: 23 pairs or 46 total</B></li>
+    <li>Weight: 150lbs-200lbs</li>
+    <li>Age: 18-55</li>
+  </ul>
+  <p><a class="w3-card-5 btn btn-primary btn-lg" href="projectlisting1.html" role="button">Project Information</a></p>
 </div>
+
+<div class="w3-panel w3-card" id="project_card_2">
+  <h1>Project 2: Altering the "Cancer" gene.</h1>
+  <h4>Project hosted at Kaul Genetics Building. Requires a Urine test.</h4>
+  <ul>
+    <p>Requirements include:</p>
+    <li>Height: 6' 1"</li>
+    <li>Weight: 150lbs</li>
+    <li>Age: 18-55</li>
+  </ul>
+  <p><a class="w3-card-5 btn btn-primary btn-lg" href="#" role="button">Project Information</a></p>
+</div>
+
+<div class="w3-panel w3-card" id="project_card_3">
+  <h1>Project 3: Physics Research</h1>
+  <h4>Project hosted at Hawking Physics facility.</h4>
+  <ul>
+    <p>Requirements include:</p>
+    <li>Drive to learn.</li>
+    <li>Education: At least studying undergrad in Physics</li>
+    <li>Meetings: Meet at least 3 times a week</li>
+  </ul>
+  <p><a class="w3-card-5 btn btn-primary btn-lg" href="#" role="button">Project Information</a></p>
+</div>
+
 <script>
 function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
 }
 function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
 }
 </script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 </body>

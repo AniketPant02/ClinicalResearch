@@ -1,25 +1,56 @@
 @import url('https://font.googleapis.com/css?family=Raleway');
 @import url('https://font.googleapis.com/css?family=Oswald');
 
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%
-}
-.intro {
-  height: 100%;
-  width: 100%;
-  margin: auto;
-  background: url("landing.png") no-repeat 50% 50%;
-  display: table;
-  top: 0;
-  background-size: cover;
-}
 .intro .inner{
   display: table-cell;
   vertical-align: middle;
   width: 100%;
   max-width: none;
+}
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
 
+.pimg1, .pimg3{
+  position:relative;
+  opacity:1;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+.pimg2{
+  position:relative;
+  opacity:0.80;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('landing.png');
+  min-height:100%;
+  padding: 10%;
+}
+img {
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: auto;
 }
