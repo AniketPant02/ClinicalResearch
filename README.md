@@ -1,2 +1,0 @@
-# ClinicalResearch
-ClinicalResearch
